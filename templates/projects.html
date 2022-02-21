@@ -1,0 +1,16 @@
+{% extends 'header_layout.html' %}
+{% load static %}
+{% block content %}
+    <section class="projects">
+        <div class="container">
+            <label>Projects</label>
+            <div class="red-divider"></div>
+        </div>
+        <div class="list-container">
+            {% for project in projects %}
+                {% include "project_layout.html" %}
+            {% endfor %}
+        </div>
+    </section>
+    {% include "footer_layout.html" %}
+{% endblock %}

@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Zayyad Musa</title>
+    <meta name="keywords" content="portfolio, software developer portfolio, zayyad portfolio, full stack application, web application development, django application, portfolio design, portfolio tutorials"/>
+    <meta name="author" content="Zayyad Musa">
+    <meta name="description" property="og:description" content="A portfolio site is essential for every software developer to showcase projects and technical skills which demonstrates what you can do based upon your resume.">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Herr_Zee">
+    <meta name="twitter:title" content="MyPortfolio | Zayyad Musa">
+    <meta name="twitter:description" content="A portfolio site is essential for every software developer to showcase projects and technical skills which demonstrates what you can do based upon your resume.">
+    <meta name="twitter:creator" content="@Herr_Zee">
+    <meta name="twitter:image" content="https://assets.hackbotone.com/assets/myportfolio/banner.png">
+
+    <!-- Open Graph data -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="MyPortfolio | Zayyad Musa" />
+    <meta property="og:description" content="A portfolio site is essential for every software developer to showcase projects and technical skills which demonstrates what you can do based upon your resume." />
+    <meta property="og:url" content="https://zayyadev.com" />
+    <meta property="og:site_name" content="MyPortfolio" />
+    <meta property="article:publisher" content="https://www.facebook.com/zayyad.musaid" />
+    <meta property="fb:app_id" content="308814687516412" />
+    <!-- <meta property="og:image" content="https://assets.hackbotone.com/assets/myportfolio/banner.png" />
+    <meta property="og:image:secure_url" content="https://assets.hackbotone.com/assets/myportfolio/banner.png" /> -->
+
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/Z.ico' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="/" class="logo">My Portfolio.</a>
+            <div class="nav-container"></div>
+        </header>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

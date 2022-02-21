@@ -1,0 +1,23 @@
+[{
+	"id": 2,
+	"project_id": "zayyadev",
+	"title": "zayyadev Blog Django Application",
+	"small_thumbnail": "https://assets.hackbotone.com/assets/myportfolio/small/hackbotone.png",
+	"large_thumbnail": "https://assets.hackbotone.com/assets/myportfolio/large/hackbotone.png",
+	"description": "HackbotOne platform is a blogging website. The idea behind this platform is to publish contents from Application Security & Software Development, which can be helpful for those who have an interest and passion in these areas.",
+	"github_link": "https://github.com/zayyadi/blogproj",
+	"tech_stack": "Python",
+	"color_code": "#006d77"
+},
+{
+	"id": 1,
+	"project_id": "blog-Api-Implementation",
+	"title": "Blog API implementation using Django, Django Rest Framework",
+	"small_thumbnail": "https://assets.hackbotone.com/assets/myportfolio/small/hrs.png",
+	"large_thumbnail": "https://assets.hackbotone.com/assets/myportfolio/large/hrs.png",
+	"description": "This is a Resful API implementation of Blog to be implemented with any Frontend framework, the API is built using DRF and django AUTH for autheticationm",
+	"github_link": "https://github.com/zayyadi/blogapi",
+	"tech_stack": "Python",
+	"color_code": "#252422"
+}
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "platform_id": "programming",
+        "domain": "Python",
+        "domain_url": "https://www.python.org/"
+    },
+    {
+        "platform_id": "programming",
+        "domain": "JavaScript",
+        "domain_url": "https://www.javascript.com/"
+    },
+    {
+        "platform_id": "programming",
+        "domain": "GraphQL",
+        "domain_url": "https://graphql.org/"
+    },
+    {
+        "platform_id": "web_framework",
+        "domain": "Django",
+        "domain_url": "https://www.djangoproject.com/"
+    },
+    {
+        "platform_id": "web_framework",
+        "domain": "FastAPI",
+        "domain_url": "https://fastapi.tiangolo.com/"
+    },
+    {
+        "platform_id": "back_end",
+        "domain": "FastAPI",
+        "domain_url": "https://fastapi.tiangolo.com/"
+    },
+    {
+        "platform_id": "back_end",
+        "domain": "Django REST framework",
+        "domain_url": "https://www.django-rest-framework.org/"
+    },
+    {
+        "platform_id": "back_end",
+        "domain": "Python Flask",
+        "domain_url": "https://flask.palletsprojects.com/en/2.0.x/"
+    },
+    {
+        "platform_id": "database",
+        "domain": "PostgreSQL",
+        "domain_url": "https://www.postgresql.org/"
+    },
+    {
+        "platform_id": "database",
+        "domain": "SQLite",
+        "domain_url": "https://www.sqlite.org/index.html"
+    },
+    {
+        "platform_id": "ci_cd",
+        "domain": "Docker",
+        "domain_url": "https://www.docker.com/"
+    },
+    {
+        "platform_id": "ci_cd",
+        "domain": "Kubernetes",
+        "domain_url": "https://kubernetes.io/"
+    },
+    {
+        "platform_id": "cloud_platform",
+        "domain": "Heroku",
+        "domain_url": "https://www.heroku.com/"
+    },
+    {
+        "platform_id": "web_server",
+        "domain": "Nginx",
+        "domain_url": "https://www.nginx.com/"
+    }
+]

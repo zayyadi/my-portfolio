@@ -1,0 +1,100 @@
+{% extends 'header_layout.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="introduction" id="home">
+        <img src="{% static 'images/background.png' %}" class="background" loading="lazy" alt=""/>
+        <div class="container">
+            <span class="hello">Hello,</span>
+            <span class="full-name">I'm {{ profile.full_name }}</span>
+            <span class="designation">{{ profile.designation }}</span>
+            <div class="red-divider"></div>
+            <div class="social-media-container">
+                <img src="{% static 'images/github.png' %}" alt="GitHub" title="GitHub"
+                     onclick="window.open('{{ profile.github }}', '_blank')"/>
+                <img src="{% static 'images/facebook.png' %}" alt="Facebook" title="Facebook"
+                     onclick="window.open('{{ profile.facebook }}', '_blank')"/>
+                <img src="{% static 'images/twitter.png' %}" alt="Twitter" title="Twitter"
+                     onclick="window.open('{{ profile.twitter }}', '_blank')"/>
+                <img src="{% static 'images/linkedin.png' %}" alt="Linkedin" title="Linkedin"
+                     onclick="window.open('{{ profile.linkedin }}', '_blank')"/>
+                <img src="{% static 'images/instagram.png' %}" alt="Instagram" title="Instagram"
+                     onclick="window.open('{{ profile.instagram }}', '_blank')"/>
+            </div>
+            <div class="button-container">
+                <button class="projects-btn" onclick="window.location.href='/projects'">Projects</button>
+            </div>
+        </div>
+    </section>
+    <section class="about-me" id="about-me">
+        <div class="container">
+            <label>About Me</label>
+            <div class="red-divider"></div>
+            <div class="profile">
+                <img src="{{ profile.photo }}" class="photo" alt="{{ profile.full_name }}" title="{{ profile.full_name }}">
+                <div class="description">
+                    {{ profile.about_me|safe }}
+                    <p class="view-profile">
+                        <button onclick="window.open('{{ profile.linkedin }}')">VIEW PROFILE</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="technical-skills" id="tech-skills">
+        <div class="container">
+            <label>Technical Skills</label>
+            <div class="red-divider"></div>
+            <div class="tech-platforms-container">
+                {% for skill in skills %}
+                    <div class="list-container">
+                        <p class="platforms-label">{{ skill.platform }}</p>
+                        <div class="divider-container">
+                            <div class="divider"></div>
+                            <div class="divider-dot"></div>
+                        </div>
+                        <div class="tech-stack-container">
+                            {% for tech_stack in skill.tech_stack %}
+                                <a href="{{ tech_stack.domain_url }}" class="tech-stack" target="_blank">{{ tech_stack.domain }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="container">
+            <label>Projects</label>
+            <div class="red-divider"></div>
+        </div>
+        <div class="list-container">
+            {% for project in projects|slice:":3" %}
+                {% include "project_layout.html" %}
+            {% endfor %}
+        </div>
+        <p class="view-projects">
+            <button onclick="window.location.href='/projects'">VIEW ALL PROJECTS</button>
+        </p>
+    </section>
+    <section class="blogs" id="blogs">
+        <div class="container">
+            <label>Blogs</label>
+            <div class="red-divider"></div>
+        </div>
+        <div class="list-container">
+            {% for blog in blogs %}
+                <div class="blogs-item">
+                    <div class="thumbnail-container">
+                        <img src="{{ blog.thumbnail }}" class="thumbnail" alt=""
+                            onclick="window.open('{{ blog.link }}')"/>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <p class="read-blogs">
+            <button onclick="window.location.href='https://hackbotone.com/blogs/page/1'">READ BLOGS</button>
+        </p>
+    </section>
+    {% include "footer_layout.html" %}
+{% endblock %}
