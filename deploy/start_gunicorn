@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Name of the application
-NAME="anshuman.me"
+NAME="zayyadport"
 
 # Django project directory
 DJANGODIR=/opt/anshuman.me/my-portfolio
@@ -13,10 +13,10 @@ VIRTUAL_ENV=$DJANGODIR/venv
 SOCKFILE=$DJANGODIR/run/gunicorn.sock
 
 # the user to run as
-USER=hackbotone
+USER=zayyad
 
 # the group to run as
-GROUP=hackbotone
+GROUP=zayyad
 
 # how many worker processes should Gunicorn spawn
 NUM_WORKERS=3

@@ -36,9 +36,9 @@ jobs:
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
-          scp  -o StrictHostKeyChecking=no -r ./.env  root@${{ secrets.VPS_IP_ADDRESS }}:/opt/anshuman.me/my-portfolio
+          scp  -o StrictHostKeyChecking=no -r ./.env  root@${{ secrets.VPS_IP_ADDRESS }}:/opt/zayyadev/my-portfolio
           ssh -o StrictHostKeyChecking=no root@${{ secrets.VPS_IP_ADDRESS }} << 'ENDSSH'
-            cd /opt/anshuman.me/my-portfolio
+            cd /opt/zayyadev/my-portfolio
             git pull origin main --force
             source ./venv/bin/activate
             pip3 install --upgrade pip
