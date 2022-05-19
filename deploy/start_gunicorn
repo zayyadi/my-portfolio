@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Name of the application
-NAME="zayyadport"
+NAME="zayadev"
 
 # Django project directory
-DJANGODIR=/opt/anshuman.me/my-portfolio
+DJANGODIR=/opt/zayyadev/my-portfolio
 
 # Virtual Env directory
 VIRTUAL_ENV=$DJANGODIR/venv
